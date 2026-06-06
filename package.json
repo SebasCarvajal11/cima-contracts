@@ -1,0 +1,48 @@
+{
+  "name": "@cima/contracts",
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@11.1.1",
+  "private": false,
+  "description": "Versioned integration contracts for the CIMA CRM microservices.",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebasCarvajal11/cima-contracts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SebasCarvajal11/cima-contracts/issues"
+  },
+  "homepage": "https://github.com/SebasCarvajal11/cima-contracts#readme",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./auth-identity-events": {
+      "types": "./dist/auth-identity-events.d.ts",
+      "default": "./dist/auth-identity-events.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc --noEmit -p tsconfig.json",
+    "prepublishOnly": "pnpm test && pnpm build",
+    "pack:dry-run": "pnpm pack --dry-run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "zod": "^4.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "zod": "^4.4.3"
+  }
+}
