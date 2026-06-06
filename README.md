@@ -17,7 +17,7 @@ Consumers should pin an explicit version, for example:
 ```json
 {
   "dependencies": {
-    "@sebascarvajal11/cima-contracts": "0.1.0"
+    "@sebascarvajal11/cima-contracts": "0.1.1"
   }
 }
 ```
