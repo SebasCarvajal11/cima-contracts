@@ -1,4 +1,4 @@
-# @cima/contracts
+# @sebascarvajal11/cima-contracts
 
 Versioned integration contracts for CIMA CRM services.
 
@@ -17,7 +17,7 @@ Consumers should pin an explicit version, for example:
 ```json
 {
   "dependencies": {
-    "@cima/contracts": "0.1.0"
+    "@sebascarvajal11/cima-contracts": "0.1.0"
   }
 }
 ```

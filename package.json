@@ -1,5 +1,5 @@
 {
-  "name": "@cima/contracts",
+  "name": "@sebascarvajal11/cima-contracts",
   "version": "0.1.0",
   "type": "module",
   "packageManager": "pnpm@11.1.1",
