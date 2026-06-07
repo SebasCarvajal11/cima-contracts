@@ -17,6 +17,7 @@ const authIdentityEventBaseSchema = z.object({
   companyName: nullableText,
   profession: nullableText,
   timestamp: z.string().datetime({ offset: true }),
+  traceId: z.string().optional(),
 });
 
 export const userRegisteredIdentityEventSchema = authIdentityEventBaseSchema.extend({
