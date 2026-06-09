@@ -28,7 +28,6 @@ To support independent microservice deployments, CIMA CRM employs a multi-versio
 4. **Metrics Tracking**:
    - Consumers MUST track event consumption metrics (processed message count by type and version) using logs and/or Redis hash keys (e.g., `metrics:events:processed`) to verify when deprecated versions can safely be retired.
 5. **Compatibility Matrix & Breaking Changes**:
-   - A compatibility matrix is defined in [compatibility-matrix.ts](file:///D:/BACKUP CELULAR OLIMPO/cima-contracts/src/compatibility-matrix.ts) tracking service version vs contract version compatibility.
    - **Breaking Change Resolution**: A breaking change in a contract requires a major version bump of at least one of the two ends (typically the producer service and/or the contracts library). This must be accompanied by the temporal coexistence of both versions (e.g., dual publishing or backward-compatible parsing) to ensure no downtime or sync coordination is required during deployment.
 
 ## Architecture Rules

@@ -28,7 +28,7 @@ Los consumidores deben pinear una versión exacta en sus `package.json`.
 
 ```bash
 # En cada servicio consumidor (requiere autenticación con GitHub Packages)
-pnpm add @sebascarvajal11/cima-contracts@0.2.0
+pnpm add @sebascarvajal11/cima-contracts@0.3.1
 ```
 
 Configurar `.npmrc` en el servicio consumidor:
@@ -48,7 +48,6 @@ Configurar `.npmrc` en el servicio consumidor:
 | `@.../cima-contracts/metrics` | `createServiceMetrics`, `httpMetricsMiddleware` |
 | `@.../cima-contracts/jwks` | `JwksClient` para validación de JWTs |
 | `@.../cima-contracts/stream-conventions` | Nombres canónicos de Redis Streams |
-| `@.../cima-contracts/compatibility-matrix` | Matriz de versiones de eventos soportadas |
 | `@.../cima-contracts/auth-identity-events` | Schemas de eventos de identidad |
 | `@.../cima-contracts/collab-project-events` | Schemas de eventos de proyectos |
 | `@.../cima-contracts/media-asset-events` | Schemas de comandos y respuestas de media |
