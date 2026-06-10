@@ -55,6 +55,10 @@
       "types": "./dist/event-consumer.d.ts",
       "default": "./dist/event-consumer.js"
     },
+    "./gateway-manifest": {
+      "types": "./dist/gateway-manifest.d.ts",
+      "default": "./dist/gateway-manifest.js"
+    },
     "./metrics": {
       "types": "./dist/metrics.d.ts",
       "default": "./dist/metrics.js"

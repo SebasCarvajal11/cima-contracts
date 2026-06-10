@@ -1,5 +1,6 @@
 import { createMiddleware } from "hono/factory";
 import { AppError } from "./hono-error-handler-middleware";
+export { AppError };
 
 /**
  * Validates request headers, lengths, and formats to limit the attack surface.
