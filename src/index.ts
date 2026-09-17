@@ -18,6 +18,7 @@ export * from "./gateway-manifest";
 // ./logger, ./redis, ./worker-health,
 // ./hono-security-middleware, ./hono-request-logger-middleware,
 // ./hono-error-handler-middleware, ./hono-auth-middleware
+// ci: verificacion de integracion continua
 
 
 
