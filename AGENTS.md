@@ -7,7 +7,7 @@
 ## Fronteras con otros servicios
 
 - **Upstream**: Ninguno (es una biblioteca compartida independiente).
-- **Downstream**: Todos los microservicios de la plataforma (`crm-auth`, `crm-collab`, `crm-media`, `crm-frontend`) que consumen sus tipos o esquemas Zod.
+- **Downstream**: Todos los microservicios de la plataforma (`crm-auth`, `crm-collab`, `crm-media`, `crm-frontend`, `crm-customers`, `crm-marketing`) que consumen sus tipos, contratos o esquemas Zod.
 - **Pares**: N/A.
 - **Recursos Compartidos**: Ninguno.
 - **Fuera de mi responsabilidad**: No implementa lógica de negocio, persistencia de datos, enrutamiento ni validación en tiempo de ejecución de las peticiones. Su único propósito es servir de catálogo estático y tipado.

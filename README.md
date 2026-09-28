@@ -51,6 +51,8 @@ Configurar `.npmrc` en el servicio consumidor:
 | `@.../cima-contracts/auth-identity-events` | Schemas de eventos de identidad |
 | `@.../cima-contracts/collab-project-events` | Schemas de eventos de proyectos |
 | `@.../cima-contracts/media-asset-events` | Schemas de comandos y respuestas de media |
+| `@.../cima-contracts/email-dispatch` | Contrato estricto de despacho de correo a Media |
+| `@.../cima-contracts/error-catalog` | Catálogo de errores normalizados (`NormalizedError`) |
 
 ## Desarrollo local
 
