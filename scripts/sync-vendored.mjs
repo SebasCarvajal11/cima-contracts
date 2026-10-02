@@ -10,12 +10,11 @@ const TARGET_SERVICES = [
   "crm-auth",
   "crm-collab",
   "crm-media",
-  "crm-customers",
   "crm-frontend",
 ];
 
 const DIRS_TO_SYNC = ["src", "dist"];
-const FILES_TO_SYNC = ["package.json", "tsconfig.json", "README.md", "AGENTS.md"];
+const FILES_TO_SYNC = ["package.json", "tsconfig.json", "pnpm-lock.yaml", "README.md", "AGENTS.md"];
 
 function syncDirectory(srcPath, destPath) {
   if (fs.existsSync(destPath)) {
