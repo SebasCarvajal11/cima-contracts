@@ -63,11 +63,14 @@ function main() {
     process.exit(1);
   }
 
-  console.log("[contracts-sync] Starting sync from canonical cima-contracts...");
-  for (const service of TARGET_SERVICES) {
+  const cliTargets = process.argv.slice(2).filter(Boolean);
+  const targetServices = cliTargets.length > 0 ? cliTargets : TARGET_SERVICES;
+
+  console.log(`[contracts-sync] Starting sync from canonical cima-contracts to: ${targetServices.join(", ")}`);
+  for (const service of targetServices) {
     syncServiceContracts(service);
   }
-  console.log("[contracts-sync] All vendored contracts are in sync with canonical source.");
+  console.log("[contracts-sync] Vendored contracts sync complete.");
 }
 
 main();
